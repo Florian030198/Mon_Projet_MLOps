@@ -1,0 +1,21 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# 1. L'environnement virtuel (Le plus gros morceau)
+.venv/
+
+# 2. Les fichiers "poubelle" de Python (générés automatiquement)
+__pycache__/
+*.pyc
+
+# 3. Les Données et les Modèles (Trop lourds pour GitHub)
+data/
+artifacts/
+mlruns/
+
+# 4. Les mots de passe et clés secrètes (SÉCURITÉ STRICTE)
+.env
+
+# 5. Les fichiers systèmes et éditeurs (Inutiles pour les autres)
+.DS_Store
+Thumbs.db
+.vscode/
+.ipynb_checkpoints/
