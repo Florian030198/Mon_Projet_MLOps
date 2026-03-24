@@ -20,6 +20,9 @@ def load_data(path=DATA_PATH):
     # 4. Nettoyer le contenu de la colonne 'name' (minuscules et sans espaces)
     df['name'] = df['name'].str.lower().str.strip()
 
+# On enlève les espaces invisibles autour des villes
+    df['city'] = df['city'].str.strip()
+    
     return df
 
 if __name__ == "__main__":
